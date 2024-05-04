@@ -41,7 +41,6 @@
 // let thirty = "30"
 // //what is the value of the following expressions?
 
-
 // let addition = three + four;
 // console.log(addition);
 
@@ -87,20 +86,124 @@
 
 //Question 5
 
-function getGreeting(name) {
-    return "Hello " + name + "!";
-  }
-  
-  // Answer
-  // a
-  const getGreetings_function = function (name) {
-    return "Hello " + name + "!";
-  };
-  
-  // b
-  const getGreetings_arrow = (name) => {
-    return "Hello " + name + "!";
-  };
+// function getGreeting(name) {
+//     return "Hello " + name + "!";
+//   }
 
-  //Question 6
-  
+//   // Answer
+//   // a
+//   const getGreetings_function = function (name) {
+//     return "Hello " + name + "!";
+//   };
+
+//   // b
+//   const getGreetings_arrow = (name) => {
+//     return "Hello " + name + "!";
+//   };
+
+//Question 6
+// const westley = {
+//   name: "Westley",
+//   numFingers: 5,
+// };
+
+// const rugen = {
+//   name: "Count Rugen",
+//   numFingers: 6,
+// };
+
+// const inigo = {
+//     firstName: 'Inigo',
+//     greeting(person) {
+//         let greeting = `Hello ${person.name}, my name is ${this.firstName}. `;
+//         console.log(greeting + this.getCatchPhrase(person));
+//     },
+//     getCatchPhrase: (person) => person.numFingers === 6 ? 'Hello, my name is Inigo Montoya. You killed my father. Prepare to die.' : 'Nice to meet you.'
+// }
+
+// inigo.greeting(westley);
+// inigo.greeting(rugen);
+
+//Question 7
+// const basketballGame = {
+//   score: 0,
+//   fouls: 0,
+//   noOfFouls() {
+//     this.fouls++;
+//     return this;
+//   },
+//   freeThrow() {
+//     this.score++;
+//     return this;
+//   },
+//   basket() {
+//     this.score += 2;
+//     return this;
+//   },
+//   threePointer() {
+//     this.score += 3;
+//     return this;
+//   },
+//   halfTime() {
+//     console.log("Halftime score is " + this.score + " with " + this.fouls + " fouls.");
+//     return this;
+//   },
+//   fullTime() {
+//     console.log(
+//       "Fulltime score is " + this.score + " with " + this.fouls + " fouls."
+//     );
+//     return this;
+//   },
+// };
+// //modify each of the above object methods to enable function chaining as below:
+// basketballGame
+//   .basket()
+//   .freeThrow()
+//   .freeThrow()
+//   .basket()
+//   .threePointer()
+//   .halfTime()
+//   .threePointer()
+//   .freeThrow()
+//   .noOfFouls()
+//   .fullTime();
+
+//Question 8
+//   const sydney = {
+//     name: 'Sydney',
+//     population: 5_121_000,
+//     state: 'NSW',
+//     founded: '26 January 1788',
+//     timezone: 'Australia/Sydney'
+// }
+
+// for (const property in sydney) {
+//     console.log(`${property}: ${sydney[property]}`);
+//   }
+
+//   const perth = {
+//     name: 'Perth',
+//     population: 1_985_000,
+//     state: 'WA',
+//     founded: '12 August 1829'
+//   }
+
+//   for (const property in perth) {
+//     console.log(`${property}: ${perth[property]}`);
+//   }
+
+// Question 9
+// let teamSports = ["Hockey", "Cricket", "Volleyball"];
+// let moreSports = teamSports;
+// moreSports.push("AFL");
+// let dog1 = "Bingo";
+// let dog2 = dog1;
+// dog2 = "Spot";
+// let cat1 = { name: "Fluffy", breed: "Siberian" };
+// let cat2 = cat1;
+// cat1.name = "Felix";
+// console.log(moreSports)
+// console.log(cat2)
+// console.log(dog2)
+
+// Question 10
